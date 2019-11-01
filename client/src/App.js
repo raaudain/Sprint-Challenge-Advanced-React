@@ -34,10 +34,11 @@ class App extends React.Component {
         <header>
           <h1>Women's World Cup Players Google Search Rankings</h1>
 
-          <div className="darkToggler">Toggle Dark Mode<DarkMode /></div>
+          <div className="darkToggler">Toggle Dark Mode<DarkMode data-testid="isRendered"/></div>
         </header>
-        <div className="card">
-          <Players players={this.state.players} /></div>
+          <div className="card">
+            <Players players={this.state.players} data-testid="isRendering" />
+          </div>
       </div>
     );
   }
