@@ -1,33 +1,78 @@
-.App {
-  text-align: center;
+.dark{
+  background-color: #1F2022;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.darkToggle {
+  background: papayawhip;
+  border-radius: 50px;
+  border: 1px solid black;
+  height: 20px;
+  position: relative;
+  width: 40px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.toggle {
+  background: #f68819;
+  border-radius: 50px;
+  height: 18px;
+  left: 0;
+  position: absolute;
+  transition: 0.2s;
+  width: 20px;
+}
+
+.toggled {
+  left: 18px;
+}
+
+.header{
+  margin: auto;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 40px;
 }
 
-.App-link {
-  color: #61dafb;
+h1{
+  width: 50%;
+  padding-left: 20px;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.dark h1{
+  color: ghostwhite;
+}
+
+.darkToggler{
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
+  width: 50%
+}
+
+.dark .darkToggler{
+  color: ghostwhite;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
+  width: 50%
+}
+
+.card{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.playerCard{
+  font-size: 18px;
+  text-align: center;
+  color: black;
+  border: 1px solid black;
+  margin: 20px;
+  padding: 10px;
+  width: 250px
+}
+
+.dark .playerCard{
+  border: 1px solid ghostwhite;
+  color: ghostwhite;
 }
